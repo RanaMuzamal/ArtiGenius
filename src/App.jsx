@@ -11,6 +11,7 @@ function App() {
     const [image, setImage] = useState("");
     const [inputData, setInputImage] = useState("");
     const [loading, setLoading] = useState(false);
+
     async function fetchData() {
         try {
             setLoading(true);
@@ -106,19 +107,16 @@ function App() {
                     <img
                         src={image}
                         alt=""
-                        className="mx-auto my-4 rounded-[20px] h-auto max-w-full px-3"
+                        className="mx-auto my-4 rounded-[20px] h-auto max-w-full px-3 md:mb-[50px]"
                     />
                 </a>
             )}
 
-            <footer className="fixed bottom-0 left-0 w-full mt-10 ">
-                <div className="container mx-auto  flex justify-center items-center ml-[-30px]">
-                    <img
-                        src="/open-ai.png"
-                        alt="OpenAI logo"
-                        className="w-[170px] mr-[-60px] md:ml-[150px]"
-                    />
-                    <p className="text-white text-sm">Powered by OpenAI</p>
+            <footer class="fixed bottom-0 left-0 w-full bg-gray-900">
+                <div class="container mx-auto py-2">
+                    <p class="text-white text-sm text-center">
+                        Powered by OpenAI
+                    </p>
                 </div>
             </footer>
         </div>
