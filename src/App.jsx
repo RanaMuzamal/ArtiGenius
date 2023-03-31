@@ -113,10 +113,35 @@ function App() {
             )}
 
             <footer class="fixed bottom-0 left-0 w-full bg-gray-900">
-                <div class="container mx-auto py-2">
-                    <p class="text-white text-sm text-center">
+                <div class="container mx-auto py-2 md:py-0 flex flex-col md:flex-row justify-around items-center">
+                    <a
+                        href="https://www.producthunt.com/posts/artigenius-ai-image-generator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-artigenius&#0045;ai&#0045;image&#0045;generator"
+                        target="_blank"
+                        className="hidden md:block"
+                    >
+                        <img
+                            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=386763&theme=light"
+                            alt="ArtiGenius&#0032;&#0045;&#0032;AI&#0032;Image&#0032;Generator - Create&#0032;Artistic&#0032;Masterpieces | Product Hunt"
+                            style={{ width: "150px", height: "44px" }}
+                            className="mx-auto"
+                        />
+                    </a>
+                    <p className="text-white text-sm text-center">
                         Powered by OpenAI
                     </p>
+
+                    <a
+                        href="https://www.buymeacoffee.com/muzamilrank"
+                        target="_blank"
+                        className="hidden md:block"
+                    >
+                        <img
+                            src="/public/coffee.png"
+                            alt="buy me coffee"
+                            style={{ width: "150px", height: "78px" }}
+                            className="mx-auto"
+                        />
+                    </a>
                 </div>
             </footer>
         </div>
