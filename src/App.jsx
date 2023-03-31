@@ -1,6 +1,7 @@
 import { Configuration, OpenAIApi } from "openai";
 import { useState } from "react";
 import logo from "/artigenius-logo.png";
+import coffee from "./assets/coffee.png";
 
 const configuration = new Configuration({
     apiKey: import.meta.env.VITE_REACT_APP_API_KEY,
@@ -136,7 +137,7 @@ function App() {
                         className="hidden md:block"
                     >
                         <img
-                            src="/public/coffee.png"
+                            src={coffee}
                             alt="buy me coffee"
                             style={{ width: "150px", height: "78px" }}
                             className="mx-auto"
